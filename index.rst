@@ -7,7 +7,7 @@ Welcome to Bellman Ford Method's documentation!
 ===============================================
 
 .. toctree::
-   :maxdepth: 100
+   :maxdepth: 2
    :caption: Contents:
 
 
@@ -40,7 +40,7 @@ Once the algorithm is over, we can backtrack from the destination vertex to the 
 
 .. code-block::
 
-      function bellmanFord(G)
+      function bf_negative_cycle(G)
         for each vertex V in G
           distance[V] <- infinite
             previous[V] <- NULL
@@ -63,7 +63,7 @@ Once the algorithm is over, we can backtrack from the destination vertex to the 
 Function
 ------------
 
-.. function:: bf_negative_cycle(graph)
+.. function:: bf_negative_cycle (graph)
 
    Returns an iterator that represents the shortest distance cycle in the graph. The input parameter must be the *negative logarithm* of the distance matrix as a DiGraph object, for example, `networkx <https://networkx.org/>`_.
 
